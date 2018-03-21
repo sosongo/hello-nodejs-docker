@@ -5,6 +5,12 @@ machine:
   services:
     - docker
 
+deployment:
+  prod:
+    branch: master
+    commands:
+      - echo "Testing Section Deploy"
+
 notify:
   webhooks:
     - url: https://api.ghostinspector.com/v1/suites/5aa0028c9d311c32b43f7125/execute/?apiKey=7a60f4a3c22fc713621c6dc44048c227217e506a&entorno=www
