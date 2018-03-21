@@ -1,12 +1,10 @@
 machine:
+  services:
+    - docker
   node:
-    version: 0.10.22
-
-dependencies:
-  override:
-    - npm install --dev
+    version: 4.4.0
 
 test:
-  post:
+  override:
     - "npm run test:circle"
 
