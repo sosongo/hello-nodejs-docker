@@ -4,7 +4,3 @@ machine:
     version: '2.4'
   services:
     - docker
-
-test:
-  pre:
-    - bundle exec pronto-circleci
